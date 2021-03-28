@@ -24,7 +24,6 @@ function setup() {
     car=createSprite(150,450,10,10);
     car.addImage("car",carImage);
     car.scale=0.8;
-    car.debug=true;
     car.setCollider("rectangle",0,0,100,200)
 
     gameState="play";
@@ -135,7 +134,6 @@ function summonCars() {
             break;
         }
         enemyCar.velocityY=10
-        enemyCar.debug=true;
         enemyCarGroup.add(enemyCar)
 
     }
